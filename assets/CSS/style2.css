@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins';
+}
+
+.main-header {
+    background-color: rgba(45, 107, 55, 0.85);
+    padding: 8px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo img {
+    width: 150px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover{
+    color: #acacab;
+    font-size: large;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 8px 19px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #D4A017;
+    color: #22480B;
+}
+
+.btn-primary:hover {
+    background-color: #e6b23a;
+    padding: 10px 25px;
+}
+
+.btn-secondary {
+    z-index: 3;
+    background-color: #bd951b;
+}
+
+.btn-secondary:hover {
+    background-color: #e6b23a;
+    padding: 10px 25px;
+}
+
+.hero {
+    min-height: 85vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.4) 60%,
+        #FFFFFF 100%
+    );
+    z-index: 2;
+}
+
+.background-slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: imageSlideShow 20s infinite;
+    z-index: 1;
+}
+
+@keyframes imageSlideShow {
+    0% {
+        background-image: url('/assets/images/home-img.jpg');
+        opacity: 1;
+    }
+
+    20% {
+        background-image: url('/assets/images/home-img.jpg');
+        opacity: 1;
+    }
+
+    25% {
+        background-image: url('/assets/images/home-img2.jpg');
+        opacity: 0;
+    }
+
+    30% {
+        background-image: url('/assets/images/home-img2.jpg');
+        opacity: 1;
+    }
+
+    45% {
+        background-image: url('/assets/images/home-img2.jpg');
+        opacity: 1;
+    }
+
+    50% {
+        background-image: url('/assets/images/home-img3.jpg');
+        opacity: 0;
+    }
+
+    55% {
+        background-image: url('/assets/images/home-img3.jpg');
+        opacity: 1;
+    }
+
+    70% {
+        background-image: url('/assets/images/home-img3.jpg');
+        opacity: 1;
+    }
+
+    75% {
+        background-image: url('/assets/images/home-img4.jpg');
+        opacity: 0;
+    }
+
+    80% {
+        background-image: url('/assets/images/home-img4.jpg');
+        opacity: 1;
+    }
+
+    95% {
+        background-image: url('/assets/images/home-img4.jpg');
+        opacity: 1;
+    }
+
+    100% {
+        background-image: url('/assets/images/home-img.jpg');
+        opacity: 0;
+    }
+}
+
+.hero-content {
+    z-index: 3;
+    position: absolute;
+    bottom: 150px;
+    right: 50px;
+    text-align:right;
+    margin-right: 50px;
+    max-width: 450px;
+    text-shadow: 1px 1px 5px black;
+
+
+}
+
+.hero-headline {
+    color: #FFFFFF;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.btn-secondary {
+    z-index: 3;
+    background-color: #bd951b;
+    color: black;
+    box-shadow: 1px 1px 3px black;
+}
