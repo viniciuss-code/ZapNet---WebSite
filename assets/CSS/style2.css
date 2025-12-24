@@ -22,7 +22,7 @@
 
 .logo img {
     width: 150px;
-    height: 45px;
+    height: 50px;
     object-fit: contain;
 }
 
@@ -201,4 +201,17 @@
     background-color: #bd951b;
     color: black;
     box-shadow: 1px 1px 3px black;
+}
+
+.sobre {
+    background-color: #E6E9EB;
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.sobre-titulo {
+    color: #333333;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 60px;
 }
